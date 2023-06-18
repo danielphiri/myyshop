@@ -14,6 +14,7 @@
 		944440752A3F0E8D007C9204 /* MyyShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440742A3F0E8D007C9204 /* MyyShopTests.swift */; };
 		9444407F2A3F0E8D007C9204 /* MyyShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444407E2A3F0E8D007C9204 /* MyyShopUITests.swift */; };
 		944440812A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440802A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift */; };
+		9444408E2A3F41E1007C9204 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444408D2A3F41E1007C9204 /* LandingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		9444407A2A3F0E8D007C9204 /* MyyShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyyShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9444407E2A3F0E8D007C9204 /* MyyShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyyShopUITests.swift; sourceTree = "<group>"; };
 		944440802A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyyShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9444408D2A3F41E1007C9204 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				944440662A3F0E8C007C9204 /* Assets.xcassets */,
 				944440682A3F0E8C007C9204 /* LaunchScreen.storyboard */,
 				9444406B2A3F0E8C007C9204 /* Info.plist */,
+				9444408D2A3F41E1007C9204 /* LandingPage.swift */,
 			);
 			path = MyyShop;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			files = (
 				9444405E2A3F0E8B007C9204 /* AppDelegate.swift in Sources */,
 				944440602A3F0E8B007C9204 /* SceneDelegate.swift in Sources */,
+				9444408E2A3F41E1007C9204 /* LandingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
