@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LandingPage: View {
+  
     var body: some View {
       ScrollView(showsIndicators: true) {
         LazyVStack {
@@ -16,7 +17,7 @@ struct LandingPage: View {
               .resizable()
               .aspectRatio(contentMode: .fill)
               .background(Color.red)
-            VStack(alignment: .center, spacing: 20) {
+            VStack(alignment: .center, spacing: .defaultSpacing) {
               Text("MyyShop is Your Shop!")
                 .font(.largeTitle)
                 .foregroundColor(.white)
@@ -27,12 +28,12 @@ struct LandingPage: View {
                 .foregroundColor(.white)
                 .multilineTextAlignment(.leading)
               signUpButton
-                .padding(.horizontal, 40)
-                .padding(.top, 50)
+                .padding(.horizontal, .defaultPadding)
+                .padding(.top, .defaultPadding + 10)
             }
-            .frame(width: UIScreen.main.bounds.width)
+            .frame(width: .screenWidth)
           }
-          .frame(height: UIScreen.main.bounds.height * 0.5)
+          .frame(height: .screenHeight)
           learnToEarnArea
         }
       }
@@ -57,7 +58,7 @@ struct LandingPage: View {
   }
   
   private var learnToEarnArea: some View {
-    VStack(alignment: .center, spacing: 20) {
+    VStack(alignment: .center, spacing: .defaultSpacing) {
       Text("Learn to Earn")
         .font(.largeTitle)
         .foregroundColor(.black)
@@ -69,14 +70,14 @@ struct LandingPage: View {
         .multilineTextAlignment(.leading)
         .padding(.horizontal, 20)
       YouTubeView(videoId: "-Yg1UeGpbS0")
-        .frame(width: UIScreen.main.bounds.width - 40, height: 300)
+        .frame(width: .screenWidth - .defaultPadding, height: 300)
         .padding()
       learnMoreButton
-        .padding(.horizontal, 40)
-        .padding(.top, 20)
+        .padding(.horizontal, .defaultPadding)
+        .padding(.top, .defaultPadding / 2)
     }
     .frame(width: UIScreen.main.bounds.width)
-    .padding(.vertical, 40)
+    .padding(.vertical, .defaultPadding)
   }
   
   private var learnMoreButton: some View {
