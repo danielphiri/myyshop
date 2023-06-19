@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LandingPage: View {
+struct LandingPageView: View {
   
   var router: Routable
   
@@ -45,7 +45,7 @@ struct LandingPage: View {
   
   private var signUpButton: some View {
     Button {
-      let signUpController = UIHostingController(rootView: SignUpPage())
+      let signUpController = UIHostingController(rootView: SignUpPageView())
       router.present(controller: signUpController, type: .popUp)
     } label: {
       ZStack {

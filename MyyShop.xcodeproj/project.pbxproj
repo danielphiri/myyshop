@@ -14,10 +14,10 @@
 		944440752A3F0E8D007C9204 /* MyyShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440742A3F0E8D007C9204 /* MyyShopTests.swift */; };
 		9444407F2A3F0E8D007C9204 /* MyyShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444407E2A3F0E8D007C9204 /* MyyShopUITests.swift */; };
 		944440812A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440802A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift */; };
-		9444408E2A3F41E1007C9204 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444408D2A3F41E1007C9204 /* LandingPage.swift */; };
+		9444408E2A3F41E1007C9204 /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444408D2A3F41E1007C9204 /* LandingPageView.swift */; };
 		944440902A40C814007C9204 /* YouTubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444408F2A40C814007C9204 /* YouTubeView.swift */; };
 		944440922A40C892007C9204 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440912A40C892007C9204 /* Extensions.swift */; };
-		944440962A40D4C6007C9204 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440952A40D4C6007C9204 /* SignUpPage.swift */; };
+		944440962A40D4C6007C9204 /* SignUpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440952A40D4C6007C9204 /* SignUpPageView.swift */; };
 		944440982A410451007C9204 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440972A410451007C9204 /* Routable.swift */; };
 		9444409A2A4104A4007C9204 /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440992A4104A4007C9204 /* PresentationType.swift */; };
 		9444409C2A4104D6007C9204 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444409B2A4104D6007C9204 /* Router.swift */; };
@@ -52,10 +52,10 @@
 		9444407A2A3F0E8D007C9204 /* MyyShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyyShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9444407E2A3F0E8D007C9204 /* MyyShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyyShopUITests.swift; sourceTree = "<group>"; };
 		944440802A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyyShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9444408D2A3F41E1007C9204 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		9444408D2A3F41E1007C9204 /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
 		9444408F2A40C814007C9204 /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
 		944440912A40C892007C9204 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		944440952A40D4C6007C9204 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		944440952A40D4C6007C9204 /* SignUpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageView.swift; sourceTree = "<group>"; };
 		944440972A410451007C9204 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		944440992A4104A4007C9204 /* PresentationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationType.swift; sourceTree = "<group>"; };
 		9444409B2A4104D6007C9204 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -109,12 +109,9 @@
 		9444405C2A3F0E8B007C9204 /* MyyShop */ = {
 			isa = PBXGroup;
 			children = (
+				9444409F2A41065B007C9204 /* Pages */,
 				9444409E2A41051A007C9204 /* System */,
 				9444409D2A4104FB007C9204 /* Navigation */,
-				9444408D2A3F41E1007C9204 /* LandingPage.swift */,
-				9444408F2A40C814007C9204 /* YouTubeView.swift */,
-				944440912A40C892007C9204 /* Extensions.swift */,
-				944440952A40D4C6007C9204 /* SignUpPage.swift */,
 			);
 			path = MyyShop;
 			sourceTree = "<group>";
@@ -156,6 +153,17 @@
 				9444406B2A3F0E8C007C9204 /* Info.plist */,
 			);
 			path = System;
+			sourceTree = "<group>";
+		};
+		9444409F2A41065B007C9204 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				9444408D2A3F41E1007C9204 /* LandingPageView.swift */,
+				9444408F2A40C814007C9204 /* YouTubeView.swift */,
+				944440952A40D4C6007C9204 /* SignUpPageView.swift */,
+				944440912A40C892007C9204 /* Extensions.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,14 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944440962A40D4C6007C9204 /* SignUpPage.swift in Sources */,
+				944440962A40D4C6007C9204 /* SignUpPageView.swift in Sources */,
 				944440982A410451007C9204 /* Routable.swift in Sources */,
 				944440922A40C892007C9204 /* Extensions.swift in Sources */,
 				944440902A40C814007C9204 /* YouTubeView.swift in Sources */,
 				9444409C2A4104D6007C9204 /* Router.swift in Sources */,
 				9444405E2A3F0E8B007C9204 /* AppDelegate.swift in Sources */,
 				944440602A3F0E8B007C9204 /* SceneDelegate.swift in Sources */,
-				9444408E2A3F41E1007C9204 /* LandingPage.swift in Sources */,
+				9444408E2A3F41E1007C9204 /* LandingPageView.swift in Sources */,
 				9444409A2A4104A4007C9204 /* PresentationType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
