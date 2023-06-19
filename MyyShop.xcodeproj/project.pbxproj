@@ -109,18 +109,12 @@
 		9444405C2A3F0E8B007C9204 /* MyyShop */ = {
 			isa = PBXGroup;
 			children = (
-				9444405D2A3F0E8B007C9204 /* AppDelegate.swift */,
-				9444405F2A3F0E8B007C9204 /* SceneDelegate.swift */,
-				944440662A3F0E8C007C9204 /* Assets.xcassets */,
-				944440682A3F0E8C007C9204 /* LaunchScreen.storyboard */,
-				9444406B2A3F0E8C007C9204 /* Info.plist */,
+				9444409E2A41051A007C9204 /* System */,
+				9444409D2A4104FB007C9204 /* Navigation */,
 				9444408D2A3F41E1007C9204 /* LandingPage.swift */,
 				9444408F2A40C814007C9204 /* YouTubeView.swift */,
 				944440912A40C892007C9204 /* Extensions.swift */,
 				944440952A40D4C6007C9204 /* SignUpPage.swift */,
-				944440972A410451007C9204 /* Routable.swift */,
-				944440992A4104A4007C9204 /* PresentationType.swift */,
-				9444409B2A4104D6007C9204 /* Router.swift */,
 			);
 			path = MyyShop;
 			sourceTree = "<group>";
@@ -140,6 +134,28 @@
 				944440802A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift */,
 			);
 			path = MyyShopUITests;
+			sourceTree = "<group>";
+		};
+		9444409D2A4104FB007C9204 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				9444409B2A4104D6007C9204 /* Router.swift */,
+				944440972A410451007C9204 /* Routable.swift */,
+				944440992A4104A4007C9204 /* PresentationType.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		9444409E2A41051A007C9204 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				944440662A3F0E8C007C9204 /* Assets.xcassets */,
+				9444405F2A3F0E8B007C9204 /* SceneDelegate.swift */,
+				9444405D2A3F0E8B007C9204 /* AppDelegate.swift */,
+				944440682A3F0E8C007C9204 /* LaunchScreen.storyboard */,
+				9444406B2A3F0E8C007C9204 /* Info.plist */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,7 +467,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8M62A5HCKB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyyShop/Info.plist;
+				INFOPLIST_FILE = MyyShop/System/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -479,7 +495,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8M62A5HCKB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyyShop/Info.plist;
+				INFOPLIST_FILE = MyyShop/System/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
