@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LandingPage: View {
+  
     var body: some View {
       ScrollView(showsIndicators: true) {
         LazyVStack {
@@ -16,7 +17,7 @@ struct LandingPage: View {
               .resizable()
               .aspectRatio(contentMode: .fill)
               .background(Color.red)
-            VStack(alignment: .center, spacing: 20) {
+            VStack(alignment: .center, spacing: .defaultSpacing) {
               Text("MyyShop is Your Shop!")
                 .font(.largeTitle)
                 .foregroundColor(.white)
@@ -25,14 +26,15 @@ struct LandingPage: View {
                 .font(.title3)
                 .fixedSize(horizontal: false, vertical: true)
                 .foregroundColor(.white)
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.leading)
               signUpButton
-                .padding(.horizontal, 40)
-                .padding(.top, 50)
+                .padding(.horizontal, .defaultPadding)
+                .padding(.top, .defaultPadding + 10)
             }
-            .frame(width: UIScreen.main.bounds.width)
+            .frame(width: .screenWidth)
           }
-          .frame(height: UIScreen.main.bounds.height * 0.5)
+          .frame(height: .screenHeight)
+          learnToEarnArea
         }
       }
       .ignoresSafeArea()
@@ -55,10 +57,44 @@ struct LandingPage: View {
     .frame(height: 60)
   }
   
+  private var learnToEarnArea: some View {
+    VStack(alignment: .center, spacing: .defaultSpacing) {
+      Text("Learn to Earn")
+        .font(.largeTitle)
+        .foregroundColor(.black)
+        .fixedSize(horizontal: false, vertical: true)
+      Text("We believe that anyone can achieve financial success with the proper knowledge and the right mindset. Our mission is to equip you with the tools and platform necessary to make this a breeze!")
+        .font(.title3)
+        .fixedSize(horizontal: false, vertical: true)
+        .foregroundColor(.black)
+        .multilineTextAlignment(.leading)
+        .padding(.horizontal, 20)
+      YouTubeView(videoId: "-Yg1UeGpbS0")
+        .frame(width: .screenWidth - .defaultPadding, height: 300)
+        .padding()
+      learnMoreButton
+        .padding(.horizontal, .defaultPadding)
+        .padding(.top, .defaultPadding / 2)
+    }
+    .frame(width: UIScreen.main.bounds.width)
+    .padding(.vertical, .defaultPadding)
+  }
+  
+  private var learnMoreButton: some View {
+    Button {
+      #warning("TODO")
+    } label: {
+      ZStack {
+        RoundedRectangle(cornerRadius: 0)
+          .foregroundColor(.black)
+        Text("Learn More")
+          .foregroundColor(.white)
+          .font(.callout)
+      }
+      
+    }
+    .frame(height: 60)
+  }
+  
 }
 
-struct LandingPage_Previews: PreviewProvider {
-    static var previews: some View {
-        LandingPage()
-    }
-}

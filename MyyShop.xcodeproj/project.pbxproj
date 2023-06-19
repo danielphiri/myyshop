@@ -15,6 +15,8 @@
 		9444407F2A3F0E8D007C9204 /* MyyShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444407E2A3F0E8D007C9204 /* MyyShopUITests.swift */; };
 		944440812A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440802A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift */; };
 		9444408E2A3F41E1007C9204 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444408D2A3F41E1007C9204 /* LandingPage.swift */; };
+		944440902A40C814007C9204 /* YouTubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444408F2A40C814007C9204 /* YouTubeView.swift */; };
+		944440922A40C892007C9204 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944440912A40C892007C9204 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9444407E2A3F0E8D007C9204 /* MyyShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyyShopUITests.swift; sourceTree = "<group>"; };
 		944440802A3F0E8D007C9204 /* MyyShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyyShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9444408D2A3F41E1007C9204 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		9444408F2A40C814007C9204 /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
+		944440912A40C892007C9204 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				944440682A3F0E8C007C9204 /* LaunchScreen.storyboard */,
 				9444406B2A3F0E8C007C9204 /* Info.plist */,
 				9444408D2A3F41E1007C9204 /* LandingPage.swift */,
+				9444408F2A40C814007C9204 /* YouTubeView.swift */,
+				944440912A40C892007C9204 /* Extensions.swift */,
 			);
 			path = MyyShop;
 			sourceTree = "<group>";
@@ -254,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944440922A40C892007C9204 /* Extensions.swift in Sources */,
+				944440902A40C814007C9204 /* YouTubeView.swift in Sources */,
 				9444405E2A3F0E8B007C9204 /* AppDelegate.swift in Sources */,
 				944440602A3F0E8B007C9204 /* SceneDelegate.swift in Sources */,
 				9444408E2A3F41E1007C9204 /* LandingPage.swift in Sources */,
