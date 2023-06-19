@@ -57,10 +57,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
-enum PresentationType {
-  case popUp
-}
-
 final class Router: Routable {
   
   var window: UIWindow?
