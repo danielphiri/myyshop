@@ -45,7 +45,7 @@ struct LandingPageView: View {
   
   private var signUpButton: some View {
     Button {
-      let signUpController = UIHostingController(rootView: SignUpPageView())
+      let signUpController = UIHostingController(rootView: SignUpPageView(router: self.router))
       router.present(controller: signUpController, type: .popUp)
     } label: {
       ZStack {

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SignUpPageView: View {
   
+  let router: Routable
+  
   @State var email = ""
   @State var emailColor: Color = .gray
   
@@ -44,7 +46,7 @@ struct SignUpPageView: View {
         }
         Spacer()
         Button() {
-#warning("TODO")
+          self.router.dismiss(type: .popUp)
         } label: {
           Image(systemName: "xmark")
             .resizable()
@@ -115,7 +117,7 @@ struct SignUpPageView: View {
 
 struct SignUpPage_Previews: PreviewProvider {
   static var previews: some View {
-    SignUpPageView()
+    SignUpPageView(router: Router())
   }
 }
 
