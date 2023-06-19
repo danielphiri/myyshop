@@ -34,7 +34,8 @@ struct YouTubeView: UIViewRepresentable {
 struct LandingPage_Previews: PreviewProvider {
   
   static var previews: some View {
-    LandingPage()
+    LandingPage(router: Router())
   }
   
 }
+

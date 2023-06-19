@@ -9,41 +9,44 @@ import SwiftUI
 
 struct LandingPage: View {
   
-    var body: some View {
-      ScrollView(showsIndicators: true) {
-        LazyVStack {
-          ZStack {
-            Image("banner-image")
-              .resizable()
-              .aspectRatio(contentMode: .fill)
-              .background(Color.red)
-            VStack(alignment: .center, spacing: .defaultSpacing) {
-              Text("MyyShop is Your Shop!")
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .fixedSize(horizontal: false, vertical: true)
-              Text("Empowers content creators to monetize their social media presence!")
-                .font(.title3)
-                .fixedSize(horizontal: false, vertical: true)
-                .foregroundColor(.white)
-                .multilineTextAlignment(.leading)
-              signUpButton
-                .padding(.horizontal, .defaultPadding)
-                .padding(.top, .defaultPadding + 10)
-            }
-            .frame(width: .screenWidth)
+  var router: Routable
+  
+  var body: some View {
+    ScrollView(showsIndicators: true) {
+      LazyVStack {
+        ZStack {
+          Image("banner-image")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .background(Color.red)
+          VStack(alignment: .center, spacing: .defaultSpacing) {
+            Text("MyyShop is Your Shop!")
+              .font(.largeTitle)
+              .foregroundColor(.white)
+              .fixedSize(horizontal: false, vertical: true)
+            Text("Empowers content creators to monetize their social media presence!")
+              .font(.title3)
+              .fixedSize(horizontal: false, vertical: true)
+              .foregroundColor(.white)
+              .multilineTextAlignment(.leading)
+            signUpButton
+              .padding(.top, .defaultPadding * 2.5)
           }
-          .frame(height: .screenHeight)
-          learnToEarnArea
+          .padding(.horizontal, .defaultPadding)
+          .frame(width: .screenWidth)
         }
+        .frame(height: .screenHeight / 2)
+        learnToEarnArea
       }
-      .ignoresSafeArea()
     }
+    .ignoresSafeArea()
+  }
   
   
   private var signUpButton: some View {
     Button {
-      #warning("TODO")
+      let signUpController = UIHostingController(rootView: SignUpPage())
+      router.present(controller: signUpController, type: .popUp)
     } label: {
       ZStack {
         RoundedRectangle(cornerRadius: 0)
@@ -74,7 +77,7 @@ struct LandingPage: View {
         .padding()
       learnMoreButton
         .padding(.horizontal, .defaultPadding)
-        .padding(.top, .defaultPadding / 2)
+        .padding(.top, .defaultPadding)
     }
     .frame(width: UIScreen.main.bounds.width)
     .padding(.vertical, .defaultPadding)
@@ -82,7 +85,7 @@ struct LandingPage: View {
   
   private var learnMoreButton: some View {
     Button {
-      #warning("TODO")
+#warning("TODO")
     } label: {
       ZStack {
         RoundedRectangle(cornerRadius: 0)
@@ -97,4 +100,5 @@ struct LandingPage: View {
   }
   
 }
+
 
