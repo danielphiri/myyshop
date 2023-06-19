@@ -57,16 +57,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
-protocol Routable {
-  
-  func initalize(initialController: UIViewController, window: UIWindow)
-  
-  func present(controller: UIViewController, type: PresentationType)
-  
-  func dismiss(type: PresentationType)
-  
-}
-
 enum PresentationType {
   case popUp
 }
