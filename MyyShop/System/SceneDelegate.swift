@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let router = self.router else {
       fatalError("Router not initialized")
     }
-    let landingPage = UIHostingController(rootView: LandingPage(router: router))
+    let landingPage = UIHostingController(rootView: LandingPageView(router: router))
     self.router?.initalize(initialController: landingPage, window: window)
   }
 

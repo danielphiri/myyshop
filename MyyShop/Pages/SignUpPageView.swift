@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignUpPage: View {
+struct SignUpPageView: View {
   
   @State var email = ""
   @State var emailColor: Color = .gray
@@ -115,7 +115,7 @@ struct SignUpPage: View {
 
 struct SignUpPage_Previews: PreviewProvider {
   static var previews: some View {
-    SignUpPage()
+    SignUpPageView()
   }
 }
 
