@@ -38,7 +38,7 @@ struct SignUpPageView: View {
     VStack(alignment: .leading, spacing: .defaultSpacing * 2) {
       HStack {
         Button() {
-#warning("TODO")
+          #warning("TODO")
         } label: {
           Image("logo")
             .resizable()
