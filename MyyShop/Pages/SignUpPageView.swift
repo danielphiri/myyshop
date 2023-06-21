@@ -14,6 +14,8 @@ struct SignUpPageView: View {
   @State var email = ""
   @State var emailColor: Color = .gray
   
+  @StateObject var viewModel = GoogleSignInViewModel()
+  
   var body: some View {
     ZStack {
       Color.black.opacity(0.5)
@@ -59,6 +61,7 @@ struct SignUpPageView: View {
       emailTextField
       getStartedButton
       logInView
+      oauthOptions
       Spacer()
     }
     .padding(.all, .defaultPadding)
@@ -85,7 +88,7 @@ struct SignUpPageView: View {
   
   private var getStartedButton: some View {
     Button {
-#warning("TODO")
+      #warning("TODO")
     } label: {
       ZStack {
         RoundedRectangle(cornerRadius: 5)
@@ -110,6 +113,51 @@ struct SignUpPageView: View {
           .foregroundColor(.teal)
       }
       Spacer()
+    }
+  }
+  
+  private var oauthOptions: some View {
+    VStack {
+      HStack {
+        RoundedRectangle(cornerRadius: 1)
+          .foregroundColor(.gray)
+          .frame(width: .screenWidth * 0.17, height: 1)
+        Spacer()
+        Text("Or continue with")
+          .foregroundColor(.gray)
+        Spacer()
+        RoundedRectangle(cornerRadius: 1)
+          .foregroundColor(.gray)
+          .frame(width: .screenWidth * 0.17, height: 1)
+      }
+      HStack(spacing: .defaultSpacing) {
+        Spacer()
+        Button() {
+        } label: {
+          RoundedRectangle(cornerRadius: 20)
+            .stroke(lineWidth: 1)
+            .foregroundColor(.gray)
+            .overlay(
+              Image("google-logo")
+                .resizable()
+            )
+        }
+        .frame(width: 40, height: 40)
+        Button() {
+#warning("TODO")
+        } label: {
+          RoundedRectangle(cornerRadius: 20)
+            .stroke(lineWidth: 1)
+            .foregroundColor(.gray)
+            .overlay(
+              Image("facebook-logo")
+                .resizable()
+                .padding(.all, 5)
+            )
+        }
+        .frame(width: 40, height: 40)
+        Spacer()
+      }
     }
   }
   
