@@ -1,4 +1,4 @@
-i# MyyShop iOS App
+# MyyShop iOS App
 
 The MyyShop iOS App is a simplified demo showcasing my implementation approach for developing an iOS app for MyyShop (https://www.myyshop.com). This project is primarily implemented using SwiftUI, with navigation handled using UIKit.
 
@@ -40,11 +40,8 @@ All of these dependencies were added using SPM.
 ## Screenshots
 
 <p align="left">
-    <img src="Assets/screenshot-1.png" alt="Home Screen" width="30%">
-    <img src="Assets/screenshot-2.png" alt="Product Search" width="30%">
-    <img src="Assets/screenshot-3.png" alt="Product Details" width="30%">
-    <img src="Assets/screenshot-4.png" alt="Cart and Checkout" width="30%">
-    <img src="Assets/screenshot-5.png" alt="Order Tracking" width="30%">
+    <img src="Assets/screenshot-1.png" alt="Home Screen" width="45%">
+    <img src="Assets/screenshot-2.png" alt="Product Search" width="45%">
 </p>
 
 **Note:** This application is a simplified demo of the MyyShop iOS app and is not intended for production use. It serves as a demonstration of my implementation approach and should not be used in a live production environment.
