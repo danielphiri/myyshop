@@ -1,6 +1,6 @@
 # MyyShop iOS App
 
-The MyyShop iOS App is a simplified demo showcasing my implementation approach for developing an iOS app for MyyShop (https://www.myyshop.com). This project is primarily implemented using SwiftUI, with navigation handled using UIKit.
+The MyyShop iOS App is a simplified demo showcasing my implementation approach for developing an iOS app for [MyyShop](https://www.myyshop.com). This project is primarily implemented using SwiftUI, with navigation handled using UIKit.
 
 ## About MyyShop
 
@@ -29,13 +29,13 @@ The MyyShop iOS App follows the Model-View-ViewModel (MVVM) design pattern, whic
 
 ## Dependencies
 
-This application prioritizes simplicity and does not rely on any third-party libraries or frameworks. All functionality has been implemented natively in Swift/SwiftUI. However, to handle authentication, there is some code that relying on the following libraries:
+This application prioritizes simplicity and does not rely on any third-party libraries or frameworks for most of it's user interface or functionality. All functionality has been implemented natively in Swift/SwiftUI. However, to handle authentication, there is some code that relying on the following libraries:
 - Firebase
 - FirebaseAuth
 - GoogleSignIn
 - GoogleSignInSwift
 
-All of these dependencies were added using SPM.
+All of these dependencies were integrated into the project using SPM.
 
 ## Screenshots
 
